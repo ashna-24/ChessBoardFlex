@@ -1,0 +1,36 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  margin-top:40px;
+  background-image: url("../assets/chess-boards.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.row {
+	display: flex;
+	justify-content:center;
+}
+
+.row:nth-child(odd) .square:nth-child(even){
+	background-color: #B5ACAF;
+}
+
+.row:nth-child(even) .square:nth-child(odd){
+	background-color: #B5ACAF;
+}
+
+.row:nth-child(odd) .square:nth-child(odd){
+	background-color:firebrick ;
+}
+
+.row:nth-child(even) .square:nth-child(even){
+	background-color:firebrick ;
+}
+.square{
+	width: 75px;
+	height: 75px;
+}
